@@ -1,0 +1,32 @@
+<%- include('partials/header'); -%>
+
+<div style="text-align:center">
+    <h2 style="font-family:itallic">Favourites: </h2>
+    <a href="/dashboard/favourites/newfavourite"><button type="button" class="btn btn-success" style="margin-bottom:15px">Add New Fav</button></a>
+
+    <div class="container" style="text-align:center">
+        <div class="row">
+            <% favourite.forEach(function(favourite) { %>
+            <div class="col-lg-4">
+                <div class="card" style="width: 15rem;">
+                    <img class="card-img-top" src="<%= favourite.image %>" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= favourite.title %></h5>
+                        <p class="card-text"><%= favourite.description %></p>
+                        <a href="#" class="btn btn-primary"><%= favourite.date %></a>
+                        <form action="/dashboard/favourites/<%= favourite._id %>?_method=DELETE" method="POST">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn btn-danger" style="margin-top:15px;">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+           <% }) %>
+           
+        </div>
+
+    </div>
+</div>
+
+<%- include('partials/footer'); -%>
+

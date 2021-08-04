@@ -1,0 +1,125 @@
+@font-face{
+    font-family:"Ubuntu";
+    src:url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+@font-face{
+    font-family:"Montserrat";
+    src:url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family:"Montserrat-Black";
+    src:url(../fonts/Montserrat/Montserrat-Black.ttf);
+}
+@font-face{
+    font-family:"Montserrat-Bold";
+    src:url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face{
+    font-family:"Itallic";
+    src:url(../fonts/newItalic.woff2);
+}
+
+/*.img-studio54{
+    width: 60%;
+    transform: rotate(25deg);
+    
+}*/
+
+.container-fluid{
+    padding: 5% 10%;
+}
+h1{
+    font-family: Montserrat-Black;
+}
+h3{
+    font-family: Montserrat;
+    font-weight: bold;
+}
+.navbar{
+    padding-bottom: 10%;
+} #titre{
+    background-color:floralwhite; 
+}
+
+
+#features{
+    padding: 10% 5%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+#testimonials{
+    background-color:floralwhite;
+    color: black;
+    font-family: Itallic;
+    text-align: center;
+}
+.img{
+    width: 10%;
+    margin: 20px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+}
+ul li a:visited {
+    color: black;
+}
+ul li a:hover {
+    color: #badc58;
+}
+h1 a {
+    color: black;
+    text-decoration: none;
+}
+h1 a:visited {
+    color: black;
+}
+h1 a:hover {
+    color: black;
+}
+
+.girl{
+    border-radius: 50%;
+}
+.item{
+    text-decoration: none;
+}
+.item:visited{
+    color: black;
+}
+.item:hover{
+    color: #badc58;
+}
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:visited,
+.btn-danger:focus {
+    background-color: #a29bfe;
+    border-color: #a29bfe;
+}
+.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited,
+.btn-success:focus {
+    background-color: #b8e994;
+    border-color: #b8e994;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #ffda79;
+    border-color: #ffda79;
+}
+
+
+
+

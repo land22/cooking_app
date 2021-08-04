@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+
+<div style="text-align:center">
+    <h2 style="margin-top:40px;color:black;font-family:itallic">Schedule:</h2>
+    <a href="/dashboard/schedule/newschedule"><button type="button" class="btn btn-success">New Schedule</button></a>
+
+  <% schedule.forEach(function(schedule){ %>
+    <div class="infos-schedule" style="margin-top:30px">
+        <h3><%= schedule.ReceipeName %></h3>
+        <p>Time: <%= schedule.time %></p>
+        <p>Date: <%= schedule.scheduleDate %></p>
+        <div class="item">
+            <div class="delete-schedule">
+                <form action="/dashboard/schedule/<%= schedule._id %>?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger" value="delete">Delete</button>
+                </form>
+            </div>
+            <div class="content">
+                <span>Added on : <%= schedule.date %> </span>
+            </div>
+        </div>
+    </div>
+   <% }) %>
+</div>
