@@ -56,7 +56,7 @@ app.use(passport.initialize());
 
 app.use(passport.session());
 
-mongoose.connect("mongodb+srv://landry:test@cluster0.idwh7.mongodb.net/cooking?retryWrites=true&w=majority",
+mongoose.connect(process.env.MONGO_URL,
 
 	{ useNewUrlParser: true,
 	 useUnifiedTopology: true
